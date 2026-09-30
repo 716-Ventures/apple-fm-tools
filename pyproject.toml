@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apple-fm-tools"
+version = "0.1.0"
+description = "Python and CLI utilities for Apple's on-device Foundation Model through fm"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Christopher Davis"}]
+dependencies = []
+
+[project.scripts]
+apple-fm = "apple_fm_tools.cli:main"
+
+[project.urls]
+Repository = "https://github.com/chrisjdavis/apple-fm-tools"
+
+[tool.setuptools.packages.find]
+include = ["apple_fm_tools*"]
